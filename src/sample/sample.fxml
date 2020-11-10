@@ -6,94 +6,30 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 
 
-<!--<GridPane fx:controller="sample.Controller"-->
-<!--          xmlns:fx="http://javafx.com/fxml" alignment="top_center" hgap="10" vgap="10" gridLinesVisible="true">-->
-<!--    <padding>-->
-<!--        <Insets top="10"/>-->
-<!--    </padding>-->
-<!--&lt;!&ndash;    <columnConstraints>&ndash;&gt;-->
-<!--&lt;!&ndash;        <ColumnConstraints percentWidth="50.0"/>&ndash;&gt;-->
-<!--&lt;!&ndash;        <ColumnConstraints percentWidth="50.0"/>&ndash;&gt;-->
-<!--&lt;!&ndash;    </columnConstraints>&ndash;&gt;-->
-<!--    <Button text="Button one" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>-->
-<!--    <Button text="Button two" GridPane.rowIndex="0" GridPane.columnIndex="1"/>-->
-<!--    <Button text="Button three" GridPane.rowIndex="1" GridPane.columnIndex="0"/>-->
-<!--    <Button text="Really long button four" GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="2"/>-->
-<!--    <Button text="Button five" GridPane.rowIndex="2" GridPane.columnIndex="0"/>-->
-<!--</GridPane>-->
-
-<!--<?import javafx.scene.layout.HBox?>-->
-<!--<HBox fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml" alignment="bottom_right"-->
-<!--        style="-fx-border-color: red; -fx-border-width: 3; -fx-border-style: dashed" spacing="10">-->
-<!--    <padding>-->
-<!--        <Insets bottom="10" right="10"/>-->
-<!--    </padding>-->
-<!--    <Button text="Okay" prefWidth="90"/>-->
-<!--    <Button text="Cancel" prefWidth="90"/>-->
-<!--    <Button text="Help" prefWidth="90"/>-->
-<!--</HBox>-->
-
-
-<!--<?import javafx.scene.layout.HBox?>-->
-<!--<?import javafx.scene.layout.BorderPane?>-->
-<!--<BorderPane fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml">-->
-<!--    <top>-->
-<!--        <Label text="This label is in the top position" alignment="CENTER"-->
-<!--               BorderPane.alignment="CENTER"-->
-<!--               style="-fx-border-color: blue; -fx-border-width: 3; -fx-border-style: dashed"/>-->
-<!--    </top>-->
-<!--    <center>-->
-<!--        <Label text="This label is in the center position and has really looooooooooooooooooooooooong text"/>-->
-<!--    </center>-->
-<!--    <left>-->
-<!--        <Label text="This label is in the left position" alignment="CENTER"/>-->
-<!--    </left>-->
-<!--    <right>-->
-<!--        <Label text="This label is in the right position"/>-->
-<!--    </right>-->
-<!--    <bottom>-->
-<!--        <HBox spacing="10" alignment="TOP_RIGHT">-->
-<!--            <padding>-->
-<!--                <Insets bottom="10" right="10"/>-->
-<!--            </padding>-->
-<!--            <Button text="Okay" prefWidth="90"/>-->
-<!--            <Button text="Cancel" prefWidth="90"/>-->
-<!--            <Button text="Help" prefWidth="90"/>-->
-<!--        </HBox>-->
-<!--    </bottom>-->
-<!--</BorderPane>-->
-
-<!--<?import javafx.scene.layout.FlowPane?>-->
-<!--<FlowPane fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml" orientation="HORIZONTAL">-->
-<!--    <Button text="Button one"/>-->
-<!--    <Button text="Button two"/>-->
-<!--    <Button text="Button thre"/>-->
-<!--    <Button text="Button four"/>-->
-<!--    <Button text="Button five"/>-->
-<!--    <Button text="Button six"/>-->
-<!--    <Button text="Button seven"/>-->
-<!--    <Button text="Button eight"/>-->
-<!--    <Button text="Button nine"/>-->
-<!--    <Button text="Button ten"/>-->
-<!--</FlowPane>-->
-
-<!--<?import javafx.scene.layout.TilePane?>-->
-<!--<TilePane fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml" orientation="HORIZONTAL">-->
-<!--    <Button text="Button one"/>-->
-<!--    <Button text="Button two"/>-->
-<!--    <Button text="Button thre"/>-->
-<!--    <Button text="Button four"/>-->
-<!--    <Button text="Button five"/>-->
-<!--    <Button text="Button six"/>-->
-<!--    <Button text="Button seven"/>-->
-<!--    <Button text="Button eight"/>-->
-<!--    <Button text="Button nine"/>-->
-<!--    <Button text="Button ten"/>-->
-<!--</TilePane>-->
-
-<?import javafx.scene.layout.StackPane?>
-<StackPane fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml">
-    <Label text="The label text" style="-fx-background-color: green"/>
-    <Button text="Button one" style="-fx-background-color: red" />
-    <Label text="The second label text" style="-fx-background-color: blue"/>
-</StackPane>
+<?import javafx.scene.control.TextField?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="top_center" hgap="10" vgap="10">
+    <padding>
+        <Insets top="10"/>
+    </padding>
+    <columnConstraints>
+        <ColumnConstraints percentWidth="40.0"/>
+        <ColumnConstraints percentWidth="15.0"/>
+        <ColumnConstraints percentWidth="45.0"/>
+    </columnConstraints>
+    <Label text="Exceldatei zum Einlesen wählen" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
+    <Label text="Spalte mit Tabellenname" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
+    <Label text="Spalte mit Spaltenname" GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
+    <Label text="Spalte mit Feldlänge" GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
+    <Label text="Spalte mit Feldlänge" GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
+    <Label text="Daten beginnen ab Zeile" GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
+    <Label text="Ausgabedatei" GridPane.rowIndex="6" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
+    <Button text="Browse..." GridPane.rowIndex="0" GridPane.columnIndex="1" GridPane.halignment="CENTER"/>
+    <TextField GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.halignment="CENTER"/>
+    <TextField GridPane.rowIndex="2" GridPane.columnIndex="1" GridPane.halignment="CENTER"/>
+    <TextField GridPane.rowIndex="3" GridPane.columnIndex="1" GridPane.halignment="CENTER"/>
+    <TextField GridPane.rowIndex="4" GridPane.columnIndex="1" GridPane.halignment="CENTER"/>
+    <TextField GridPane.rowIndex="5" GridPane.columnIndex="1" GridPane.halignment="CENTER"/>
+    <Button text="Browse..." GridPane.rowIndex="6" GridPane.columnIndex="1" GridPane.halignment="CENTER"/>
+    <Button text="Go!" GridPane.rowIndex="8" GridPane.columnIndex="1" GridPane.halignment="CENTER"/>
+</GridPane>

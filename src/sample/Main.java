@@ -11,8 +11,8 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 500, 275));
+        primaryStage.setTitle("The almighty Excel2XML Data Dictionary Import Generator");
+        primaryStage.setScene(new Scene(root, 500, 300));
         primaryStage.show();
     }
 
