@@ -42,8 +42,8 @@
                 GridPane.halignment="CENTER" onAction="#onBtnClicked"/>
 
     <Label fx:id="lOpen" GridPane.rowIndex="0" GridPane.columnIndex="2" GridPane.halignment="LEFT"/>
-    <Label fx:id="lTable" GridPane.rowIndex="1" GridPane.columnIndex="2" GridPane.halignment="LEFT"/>
-    <Label fx:id="lColum" GridPane.rowIndex="2" GridPane.columnIndex="2" GridPane.halignment="LEFT"/>
+    <Label fx:id="lTable"  GridPane.rowIndex="1" GridPane.columnIndex="2" GridPane.halignment="LEFT"/>
+    <Label fx:id="lColumn" GridPane.rowIndex="2" GridPane.columnIndex="2" GridPane.halignment="LEFT"/>
     <Label fx:id="lLength" GridPane.rowIndex="3" GridPane.columnIndex="2" GridPane.halignment="LEFT"/>
     <Label fx:id="lDescription" GridPane.rowIndex="4" GridPane.columnIndex="2" GridPane.halignment="LEFT"/>
     <Label fx:id="lStart" GridPane.rowIndex="5" GridPane.columnIndex="2" GridPane.halignment="LEFT"/>
