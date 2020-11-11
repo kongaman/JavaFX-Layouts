@@ -7,6 +7,7 @@
 
 
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
 <GridPane fx:controller="sample.Controller"
           xmlns:fx="http://javafx.com/fxml" alignment="top_center" hgap="10" vgap="10">
     <padding>
@@ -21,15 +22,37 @@
     <Label text="Spalte mit Tabellenname" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
     <Label text="Spalte mit Spaltenname" GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
     <Label text="Spalte mit Feldlänge" GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
-    <Label text="Spalte mit Feldlänge" GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
+    <Label text="Spalte mit Feldlbeschreibung" GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
     <Label text="Daten beginnen ab Zeile" GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
     <Label text="Ausgabedatei" GridPane.rowIndex="6" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
-    <Button text="Browse..." GridPane.rowIndex="0" GridPane.columnIndex="1" GridPane.halignment="CENTER"/>
-    <TextField GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.halignment="CENTER"/>
-    <TextField GridPane.rowIndex="2" GridPane.columnIndex="1" GridPane.halignment="CENTER"/>
-    <TextField GridPane.rowIndex="3" GridPane.columnIndex="1" GridPane.halignment="CENTER"/>
-    <TextField GridPane.rowIndex="4" GridPane.columnIndex="1" GridPane.halignment="CENTER"/>
-    <TextField GridPane.rowIndex="5" GridPane.columnIndex="1" GridPane.halignment="CENTER"/>
-    <Button text="Browse..." GridPane.rowIndex="6" GridPane.columnIndex="1" GridPane.halignment="CENTER"/>
-    <Button text="Go!" GridPane.rowIndex="8" GridPane.columnIndex="1" GridPane.halignment="CENTER"/>
+
+    <Button fx:id="btnOpen" text="Browse..." GridPane.rowIndex="0" GridPane.columnIndex="1" GridPane.halignment="CENTER"
+                onAction="#onBtnClicked"/>
+    <TextField fx:id="tfTableName" GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.halignment="CENTER"
+                text="2" onKeyReleased="#handleKeyReleased"/>
+    <TextField fx:id="tfColumnName" GridPane.rowIndex="2" GridPane.columnIndex="1" GridPane.halignment="CENTER"
+               text="3" onKeyReleased="#handleKeyReleased"/>
+    <TextField fx:id="tfFieldLength" GridPane.rowIndex="3" GridPane.columnIndex="1" GridPane.halignment="CENTER"
+               text="4" onKeyReleased="#handleKeyReleased"/>
+    <TextField fx:id="tfDescription" GridPane.rowIndex="4" GridPane.columnIndex="1" GridPane.halignment="CENTER"
+               text="5" onKeyReleased="#handleKeyReleased"/>
+    <TextField fx:id="tfDataStart" GridPane.rowIndex="5" GridPane.columnIndex="1" GridPane.halignment="CENTER"
+               text="3" onKeyReleased="#handleKeyReleased"/>
+    <Button fx:id="btnSaveDir" text="Browse..." GridPane.rowIndex="6" GridPane.columnIndex="1"
+                GridPane.halignment="CENTER" onAction="#onBtnClicked"/>
+
+    <Label fx:id="lOpen" GridPane.rowIndex="0" GridPane.columnIndex="2" GridPane.halignment="LEFT"/>
+    <Label fx:id="lTable" GridPane.rowIndex="1" GridPane.columnIndex="2" GridPane.halignment="LEFT"/>
+    <Label fx:id="lColum" GridPane.rowIndex="2" GridPane.columnIndex="2" GridPane.halignment="LEFT"/>
+    <Label fx:id="lLength" GridPane.rowIndex="3" GridPane.columnIndex="2" GridPane.halignment="LEFT"/>
+    <Label fx:id="lDescription" GridPane.rowIndex="4" GridPane.columnIndex="2" GridPane.halignment="LEFT"/>
+    <Label fx:id="lStart" GridPane.rowIndex="5" GridPane.columnIndex="2" GridPane.halignment="LEFT"/>
+    <Label fx:id="lSave" GridPane.rowIndex="6" GridPane.columnIndex="2" GridPane.halignment="LEFT"/>
+
+    <Label fx:id="lErrors" GridPane.rowIndex="7" GridPane.columnIndex="0" GridPane.columnSpan="3"
+                GridPane.halignment="CENTER"/>
+
+    <Button fx:id="btnGo" text="Go!" GridPane.rowIndex="8" GridPane.columnIndex="1" GridPane.halignment="CENTER"
+                onAction="#onBtnClicked"/>
+
 </GridPane>

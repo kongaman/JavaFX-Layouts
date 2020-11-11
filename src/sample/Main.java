@@ -12,7 +12,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("The almighty Excel2XML Data Dictionary Import Generator");
-        primaryStage.setScene(new Scene(root, 500, 300));
+        primaryStage.setScene(new Scene(root, 550, 320));
         primaryStage.show();
     }
 
